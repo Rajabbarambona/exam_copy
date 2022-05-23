@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&family=Fredoka:wght@300;400;500&family=Sora:wght@100;200;300;400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +6,19 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Sora, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
+    background-color: #f2f2f2;
 }
 
 
 /* HEADER SECTION */
+
+header {
+    background-color: #fff;
+    /* min-height: 20px; */
+}
 
 .nav-list {
     display: flex;
@@ -48,165 +55,146 @@ body {
 }
 
 
-/* MAIN SECTION */
+/* END OF HEADER */
 
-main {
-    background-color: #d3cdcd;
-}
+
+/* MAIN SECTION */
 
 main h1 {
     text-align: center;
     font-size: 3rem;
-    font-family: Sans sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
-    /* width: 841px; */
-    /* margin: 55px auto 0; */
 }
 
-main p {
-    padding-left: 1rem;
+p {
+    padding-left: 2rem;
 }
+
+
+/* Paragraph below img */
 
 .big-para {
     letter-spacing: 0px;
     line-height: 1;
     font-weight: 300;
-    font-family: Sans serif;
     font-size: 1.25rem;
     text-transform: none;
-    margin: 23px;
+    margin: 23px 23px 23px 0px;
 }
+
+
+/* All Boxes form or figure */
 
 .dimen {
     border-bottom-right-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
     background-color: #ffffff;
-    margin-block: 17px;
-    /* margin: 17px 31px 0px 30px; */
-    /* padding: 0 1rem 2rem 1.5rem; */
+    margin-bottom: 3rem;
 }
 
 .boxes {
     margin: 1rem;
-    /* position: relative; */
 }
 
 .box1 {
-    /* position: absolute; */
-    /* bottom: 0; */
-    max-width: 358.98px;
     min-height: 279.19px;
-    color: #111111;
-    /* background-color: #c51414; */
-    /* box-shadow: 5px 5px 19px 0 rgb(0 0 0 / 15%);
-    text-align: left;
-    border: red; */
+    color: #000;
 }
 
+
+/* measurement for all colored div */
+
 .wh {
-    max-width: 398px;
+    max-width: 410px;
     min-height: 23px;
 }
 
+
+/* Colors of all Divs  */
+
 .pink-block {
-    /* position: absolute;
-    top: 0; */
     background-color: #d10553;
-    display: block;
-    width: 358.98px;
-    /* margin-bottom: 0;
-    margin-top: 0; */
-    /* width: 100%; */
-    /* max-width: 500px; */
-    /* background-color: #c40a7a; */
 }
 
 .blue-block {
-    background-color: #59f1da;
+    background-color: #e748a2;
 }
 
 .green-block {
-    background-color: green;
+    background-color: #43bd46;
 }
 
 .yellow-block {
-    background-color: yellow;
+    background-color: #e5e800;
 }
 
 .purple-block {
-    background-color: #ec0e97;
+    background-color: #c17ff0;
 }
 
 .pink2-block {
-    background-color: #ec0e97;
-    margin-bottom: 2rem;
+    background-color: #ee7bbc;
+    margin-bottom: 3rem;
+}
+
+
+/* margin for all imgs */
+
+img {
+    margin: 2rem 0rem 2rem 2rem;
 }
 
 .btn {
-    font-size: 20px;
-    width: 194px;
-    height: 42px;
-    background-color: #ec0e97;
-    border: none;
-    outline: none;
-    padding: 20px 46px 20px 44px;
+    text-decoration: none;
+    background-color: #e748a2;
+    text-transform: uppercase;
     border-radius: 20px;
     color: #fff;
-    margin-left: 6rem;
-    text-decoration: none;
+    padding: 20px 46px 20px 44px;
 }
 
-.btn a {
-    text-transform: capitalize;
+.footer-btn {
+    text-align: center;
 }
 
-.btn:a hover {
+.btn:hover {
     background-color: #111111;
 }
 
-footer p {
-    margin-top: 2rem;
+footer {
+    padding-top: 3rem;
+    margin-top: 4rem;
     text-align: center;
     color: #fff;
     background-color: #333333;
 }
 
-.magnifying-glass-chart {
-    /* transform: translate: scaleY(50%); */
-    background-color: #ec0e97;
-    border-radius: 50%;
+
+/* coloring the footer last paragraph */
+
+.color-blue {
+    color: #e875c7;
 }
 
-.fa-bullhorn {
-    width: 200px;
+@media (min-width: 700px) {
+    .boxes {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-areas: 'box1 box2 box3' 'box4 box5 box6';
+        padding-block: 3em;
+        max-width: 1200px;
+        margin: auto;
+    }
+    h1 {
+        max-width: 800px;
+        margin: auto;
+    }
+    .footer-btn {
+        text-align: center;
+    }
+    .pink-block {
+        width: 388px
+    }
 }
-
-
-/* 
-.box2 {
-    background-color: blue;
-}
-
-.box4 {
-    background-color: rgb(0, 255, 119);
-}
-
-.box5 {
-    background-color: #d24d05;
-}
-
-.box6 {
-    background-color: yellow;
-} */
-
-
-/* 
-@media screen {
-
-
-    grid-template-columns: repeat(3, calc(33.3333% - 20px));
-    min-height: 574px;
-    grid-gap: 30px;
-    
-} */
